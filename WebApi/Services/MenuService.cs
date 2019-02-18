@@ -19,27 +19,27 @@ namespace WebApi.Services
             {
                 new MenuInfo{MenuId="1", MenuName="学习管理", ParentId="", MenuDeep=1, IconClass="el-icon-location", RoutePath=""},
                 new MenuInfo{MenuId="1-1", MenuName="文科", ParentId="1", MenuDeep=2, IconClass="", RoutePath=""},
-                new MenuInfo{MenuId="1-1-1", MenuName="语文", ParentId="1-1", MenuDeep=3, IconClass="", RoutePath="/YuWen"},
-                new MenuInfo{MenuId="1-1-2", MenuName="英语", ParentId="1-1", MenuDeep=3, IconClass="", RoutePath="/YingYu"},
-                new MenuInfo{MenuId="1-1-2-1", MenuName="英语语法", ParentId="1-1-2", MenuDeep=4, RoutePath="/YingYuYuFa", RouteParentPath="/YingYu"},
+                new MenuInfo{MenuId="1-1-1", MenuName="语文", ParentId="1-1", MenuDeep=3, IconClass="", RoutePath="/YuWen", VueCompPath="views/YuWen"},
+                new MenuInfo{MenuId="1-1-2", MenuName="英语", ParentId="1-1", MenuDeep=3, IconClass="", RoutePath="/YingYu", VueCompPath="views/YingYu"},
+                new MenuInfo{MenuId="1-1-2-1", MenuName="英语语法", ParentId="1-1-2", MenuDeep=4, RoutePath="/YingYuYuFa", RouteParentPath="/YingYu", VueCompPath="views/YingYuYuFa"},
                 new MenuInfo{MenuId="1-1-2-2", MenuName="英语口语", ParentId="1-1-2", MenuDeep=4, RoutePath=""},
-                new MenuInfo{MenuId="1-1-2-2-a", MenuName="早间口语", ParentId="1-1-2-2", MenuDeep=5, RoutePath="/YingYuKouYuLianXi", RouteParentPath="/YingYu"},
-                new MenuInfo{MenuId="1-1-2-2-b", MenuName="晚上口语", ParentId="1-1-2-2", MenuDeep=5, RoutePath="/YingYuKouYuLianXi", RouteParentPath="/YingYu"},
+                new MenuInfo{MenuId="1-1-2-2-a", MenuName="早间口语", ParentId="1-1-2-2", MenuDeep=5, RoutePath="/YingYuKouYuLianXi", RouteParentPath="/YingYu", VueCompPath="views/YingYuKouYuLianXi"},
+                new MenuInfo{MenuId="1-1-2-2-b", MenuName="晚上口语", ParentId="1-1-2-2", MenuDeep=5, RoutePath="/YingYuKouYuLianXi", RouteParentPath="/YingYu", VueCompPath="views/YingYuKouYuLianXi"},
                 new MenuInfo{MenuId="1-2", MenuName="理科", ParentId="1", MenuDeep=2, IconClass="", RoutePath=""},
-                new MenuInfo{MenuId="1-2-1", MenuName="数学", ParentId="1-2", MenuDeep=3, IconClass="", RoutePath="/ShuXue"},
-                new MenuInfo{MenuId="1-2-2", MenuName="物理", ParentId="1-2", MenuDeep=3, IconClass="", RoutePath="/WuLi"},
-                new MenuInfo{MenuId="2", MenuName="角色管理", ParentId="", MenuDeep=1, IconClass="el-icon-menu", RoutePath="/RoleManage"},
-                new MenuInfo{MenuId="3", MenuName="用户管理", ParentId="", MenuDeep=1, IconClass="el-icon-setting", RoutePath="/UserManage"}
+                new MenuInfo{MenuId="1-2-1", MenuName="数学", ParentId="1-2", MenuDeep=3, IconClass="", RoutePath="/ShuXue", VueCompPath="views/ShuXue"},
+                new MenuInfo{MenuId="1-2-2", MenuName="物理", ParentId="1-2", MenuDeep=3, IconClass="", RoutePath="/WuLi", VueCompPath="views/WuLi"},
+                new MenuInfo{MenuId="2", MenuName="角色管理", ParentId="", MenuDeep=1, IconClass="el-icon-menu", RoutePath="/RoleManage", VueCompPath="views/RoleManage"},
+                new MenuInfo{MenuId="3", MenuName="用户管理", ParentId="", MenuDeep=1, IconClass="el-icon-setting", RoutePath="/UserManage", VueCompPath="views/UserManage"}
             };
 
             if(TempObject.IsAddLiShi)
             {
-                menus.Add(new MenuInfo { MenuId = "1-1-3", MenuName = "历史", ParentId = "1-1", MenuDeep = 3, IconClass = "", RoutePath = "/LiShi"});
+                menus.Add(new MenuInfo { MenuId = "1-1-3", MenuName = "历史", ParentId = "1-1", MenuDeep = 3, IconClass = "", RoutePath = "/LiShi", VueCompPath = "views/LiShi" });
             }
 
             if (TempObject.IsAddYinYuFanYi)
             {
-                menus.Add(new MenuInfo { MenuId = "1-1-2-2-c", MenuName = "翻译练习", ParentId = "1-1-2-2", MenuDeep = 5, IconClass = "", RoutePath = "/YingYuKouYuLianXi", RouteParentPath = "/YingYu" });
+                menus.Add(new MenuInfo { MenuId = "1-1-2-2-c", MenuName = "翻译练习", ParentId = "1-1-2-2", MenuDeep = 5, IconClass = "", RoutePath = "/YingYuKouYuLianXi", RouteParentPath = "/YingYu", VueCompPath = "views/YingYuKouYuLianXi" });
             }
 
             return menus;

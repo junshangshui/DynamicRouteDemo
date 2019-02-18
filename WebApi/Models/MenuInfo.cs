@@ -24,5 +24,7 @@ namespace WebApi.Models
         //public string RouteName { get; set; }
 
         public bool RequireAuth { get; set; } = true;
+
+        public string VueCompPath { get; set; }
     }
 }
